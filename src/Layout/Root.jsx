@@ -1,9 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router';
+import Navber from '../Component/Navber';
+import Foother from '../Component/Foother';
 
 const Root = () => {
     return (
         <div>
-            <h1>hi ami jakia</h1>
+            <Navber></Navber>
+            <Outlet></Outlet>
+            <Foother></Foother>
         </div>
     );
 };
